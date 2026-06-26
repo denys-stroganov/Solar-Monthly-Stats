@@ -20,7 +20,7 @@ class LuxPowerClient:
             "password": self.password,
         }
         try:
-            response = self.session.post(LuxEndpoints.LOGIN, data=payload, timeout=5)
+            response = self.session.post(LuxEndpoints.LOGIN, data=payload, timeout=30)
 
             if response.status_code == 200:
                 self.is_logged_in = True
