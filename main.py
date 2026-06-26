@@ -15,6 +15,7 @@ def generate_date_periods(year: int, month: int):
     while start <= last_day:
         end = min(start + 8, last_day)  # крок 9 днів (включаючи перший день)
 
+
         # Форматуємо у вигляд YYYY-MM-DD
         start_str = f"{year}-{month:02d}-{start:02d}"
         end_str = f"{year}-{month:02d}-{end:02d}"
